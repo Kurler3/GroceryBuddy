@@ -1,0 +1,160 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DCDCDC;
+}
+
+:root {
+  --transition: all 0.3s linear;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-card {
+  width: 42%;
+  min-height: 40%;
+  background: white;
+  margin-bottom: 15vh;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 32px;
+  margin-bottom: 20vh;
+  letter-spacing: 3px;
+}
+
+.form-container {
+  width: 85%;
+  height: 13%;
+  margin-top: -15vh;
+  border-radius: 10px;
+}
+
+.grocery-form {
+  display: flex;
+  height: 100%;
+}
+
+.grocery-input {
+  width: 80%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border:none;
+  padding: 10px;
+  font-size: 18px;
+  background: #EFEFEF;
+}
+
+.submit-btn {
+  width: 20%;
+  min-height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  background: #93D8FA;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: #49BDF7;
+  color: white;
+}
+
+.grocery-list {
+  list-style: none;
+  padding: 20px;
+  width: 90%;
+}
+
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+.grocery-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  height: 100%;
+}
+
+#edit-btn, #delete-btn {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  height: 100%;
+}
+
+#edit-btn{
+  color:green;
+}
+
+#delete-btn{
+  color: red;
+}
+
+#edit-btn:hover {
+  color:darkgreen;
+}
+
+#delete-btn:hover {
+  color: darkred;
+}
+
+.alert {
+  width: 80%;
+  font-size: 13px;
+  padding: 2px;
+  text-align: center;
+  letter-spacing: 4px;
+  border-radius: 6px;
+}
+
+.success-alert, .edit-alert{
+  background: lightgreen;
+  color: green;
+}
+
+.delete-alert, .clear-alert {
+  background: lightcoral;
+  color: red;
+}
+
+.clear-items {
+  padding: 10px;
+  color: red;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.clear-items:hover {
+  color: darkred;
+  background: #D2D2D2;
+}
